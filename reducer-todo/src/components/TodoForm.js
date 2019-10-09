@@ -21,7 +21,7 @@ const TodoForm = () => {
         <div>
             <form onSubmit={handleSubmit}>
                 <input 
-                    placeholder='next Todo'
+                    placeholder='Next Todo'
                     type='text'
                     name='item'
                     onChange={handleChanges}
@@ -31,7 +31,7 @@ const TodoForm = () => {
                     dispatch({ type: 'ADD_TODO', payload: newTodo })}>Add Todo</button>
                 <button
                     onClick={() => 
-                    dispatch({ type: 'CLEAR_COMPLETED', payload: newTodo})}>Clear Completed Tasks</button>
+                    dispatch({ type: 'CLEAR_COMPLETED', payload: newTodo})}>Clear Todo </button>
             </form>
             {state.todos.map(todo => 
                 <div key={todo.id}>

@@ -9,7 +9,9 @@ function App() {
     return (
       <div className='App'>
 
-        <header>Reducer Todo</header>
+        <header>
+         <h1>Reducer Todo</h1> 
+          </header>
         <TodoForm />
       </div>
     )
